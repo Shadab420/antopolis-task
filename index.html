@@ -13,6 +13,10 @@
     <title>Antopolis Assignment</title>
 
     <!-- Vendor files -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d86bd90c51.js"></script>
+    <!--  Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 
     <!-- Our files -->
@@ -20,14 +24,349 @@
 
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="topbar">
+        <div class="topbar-content">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </div>
+  
+          <div class="social-bar">
+              <span class="social-icon"><i class="fab fa-twitter"></i></span>
+              <span class="social-icon"><i class="fab fa-google"></i></span>
+              <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="navbar-content">
+          <div class="left-links">
+            <ul>
+              <li><span><i class="fab fa-twitter"></i></span></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Campaign</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Store</a></li>
+              <li><a href="/">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="right-links">
+            <ul>
+              <li><span><i class="fas fa-heart"></i></span></li>
+              <li><span><i class="fas fa-shopping-cart"></i></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section id="singleProduct">        
+        <h1>Single Product</h1>
+
+        <div class="single-product">
+          <div class="product-images">
+            <div class="image-preview">
+              <img src="assets/images/products/tshirt1.jpg" alt="product image preview">
+              <button><i class="fas fa-search-plus"></i></button>
+            </div>
+            <div class="image-list">
+              <div class="image1 thumbnail">
+                <img src="assets/images/products/tshirt1.jpg" alt="product image preview">
+              </div>
+              <div class="image2 thumbnail">
+                <img src="assets/images/products/tshirt2.jpg" alt="product image preview">
+              </div>
+              <div class="image3 thumbnail">
+                <img src="assets/images/products/tshirt3.jpg" alt="product image preview">
+              </div>
+              <div class="image4 thumbnail">
+                <img src="assets/images/products/tshirt4.jpg" alt="product image preview">
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Product name</h3>
+            <div class="reviews">
+              <div class="rating">
+                <fieldset class="rate">
+                    <input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
+                    <input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
+                    <input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
+                    <input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
+                    <input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
+                    <input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
+                    <input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
+                    <input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
+                    <input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
+                    <input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
+                    </label>
+                </fieldset>
+              </div>
+              <div class="review-count">
+                <p>(2 customer reviews)</p>
+              </div>
+            </div>
+
+            <h3>$30.00</h3>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            
+            <hr/>            
+
+            <h5>Color:</h5>
+            <div class="colors-list">
+              <div class="color-box" id="color1"></div>
+              <div class="color-box" id="color2"></div>
+              <div class="color-box" id="color3"></div>
+              <div class="color-box" id="color4"></div>
+            </div>
+
+            <div class="size-title">
+              <h5>Size:</h5>
+              <a href="/">View size guide</a>
+            </div>
+
+            <div class="size-list">
+              <div class="small">
+                <button>S</button>
+              </div>
+              <div class="medium">
+                <button>M</button>
+              </div>
+              <div class="large">
+                <button>L</button>
+              </div>
+            </div>
+
+            <div class="quantity">
+              <h5>Quantity:</h3>
+              <select name="" id="">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+            <div class="cart-wishlist-buttons">
+              <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i>Add to cart</button>
+              <button class="btn-add-to-wishlist"><i class="fas fa-heart"></i>Add to wishlist</button>
+            </div>
+
+            <hr/>
+
+            <h5>Sku: 123456789</h5>
+            <h5>Category: Gifts</h5>
+            <h5>Tags: Tunks, Blog, Print, Book, Gift</h5>
+            
+            <div class="share-options">
+              <h5>Share:</h5>
+              <ul>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-google"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-google"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+      </section>
+
+      <section id="reviewsSection">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+            <h1>Product Information</h1>
+          </div>
+
+          <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+
+            <div class="review-list">
+              <ul></ul>
+            </div>
+
+            <h1> Leave your review</h1>
+            <h5>Rate product: </h5>
+            <div class="rating">
+              <fieldset class="rate">
+                  <input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
+                  <input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
+                  <input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
+                  <input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
+                  <input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
+                  <input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
+                  <input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
+                  <input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
+                  <input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
+                  <input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
+                  </label>
+              </fieldset>
+            </div>
+
+            <form action="/" method="POST" class="review-form">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="email" placeholder="Email">
+              <textarea name="message" class="review-message" placeholder="Message"></textarea>
+              <button type="submit" class="btn-review-submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="relatedProducts">
+        <h1>Related products</h1>
+
+        <div class="products-list">
+          <div class="product">
+            <div class="product-image">
+              <img src="assets/images/products/tshirt1.jpg" alt="Product image">
+              <span>New In</span>
+            </div>
+            <h5>Tshirt 1</h5>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <h4>$60.00</h4>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="assets/images/products/tshirt2.jpg" alt="Product image">
+            </div>
+            <h5>Tshirt 2</h5>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <h4>$80.50</h4>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="assets/images/products/tshirt3.jpg" alt="Product image">
+              <span>New In</span>
+            </div>
+            <h5>Tshirt 3</h5>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <h4>$70.00</h4>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img src="assets/images/products/tshirt4.jpg" alt="Product image">
+            </div>
+            <h5>Tshirt 4</h5>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <h4>$70.60</h4>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    
+    
+    <footer class="footer">
+      <div class="footer-contents">
+        <div class="address">
+          <h3>Get in touch</h3>
+          <p class="address">King Street, Melbourne, Victoria 3000, Australia</p>
+          <p class="phone">8 800 595 82 12</p>
+          <p class="email">mail@email.com</p>
+        </div>
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="/">Alice</a></li>
+            <li><a href="/">Wondered</a></li>
+            <li><a href="/">Companion</a></li>
+            <li><a href="/">Wondered</a></li>
+            <li><a href="/">Modesty</a></li>
+            <li><a href="/">Queen</a></li>
+            <li><a href="/">Satisfaction</a></li>
+          </ul>
+        </div>
+        <div class="recent-posts">
+          <h3>Recent Posts</h3>
+          <div class="posts-list">
+            <div class="post">
+              <div class="post-thumbnail thumbnail">
+                <img src="assets/images/products/tshirt4.jpg" alt="">
+              </div>
+              <div class="post-description">
+                <p class="desc">Looking causionly round, to assertain that they.</p>
+                <p class="post-date">December 10, 2017</p>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-thumbnail thumbnail">
+                <img src="assets/images/products/tshirt3.jpg" alt="">
+              </div>
+              <div class="post-description">
+                <p class="desc">Looking causionly round, to assertain that they.</p>
+                <p class="post-date">September 28, 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback">
+          <h3>Feedback</h3>
+          <form action="/" method="POST">
+            <input type="text" name="email" placeholder="Your email"/>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" class="btn-feedback-submit">
+              <p>Submit Form</p>
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <span class="social-icon"><i class="fab fa-twitter"></i></span>
+        <span class="social-icon"><i class="fab fa-google"></i></span>
+        <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+        <span class="social-icon"><i class="fab fa-pinterest-p"></i></span>
+        <span class="social-icon"><i class="fab fa-vimeo-v"></i></span>
+        <span class="social-icon"><i class="fab fa-youtube"></i></i></span>
+      </div>
+
+    </footer>
 
     <!-- JS Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="vendors/js/html5shiv.min.js"></script>
     <script src="vendors/js/respond.min.js"></script>
     <script src="vendors/js/selectivizr-min.js"></script>
